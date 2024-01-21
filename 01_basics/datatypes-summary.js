@@ -25,3 +25,26 @@ const bigNumber = 3445646764434679677757n;
  console.log(typeof null); //object
  console.log(typeof myFunction);
  console.log( typeof id);
+
+
+//-------------------------Memory-------------------
+// Stack (Primitive), Heap(Non-Primitive)
+
+// Primitive
+let myName = "Vrinda"
+
+let surname = myName
+surname = "Bhatia"
+console.log(myName);
+console.log(surname);
+
+
+//Non-Primitive
+let user1 = {
+   email: "user@google.com",
+   upi : "user@ybl"
+}
+let user2 = user1
+user2.email = "user@google.com"
+console.log(user1.email);
+console.log(user2.email);
