@@ -96,8 +96,27 @@ const users = [   //just like array
     }
 ]
 // console.log(users[0].email);
-console.log(User);
+// console.log(User);
 
-console.log(Object.keys(User)); //outputs an array
-console.log(Object.values(User));
-console.log(Object.entries(User)); //output nested array
+// console.log(Object.keys(User)); //outputs an array
+// console.log(Object.values(User));
+// console.log(Object.entries(User)); //output nested array
+
+
+//destructuring object
+const course = {
+    coursename: "js practice",
+    day: "9",
+    StudentName: "Vrinda"
+}
+
+// console.log(course.name);
+const {StudentName} = course 
+console.log(StudentName);
+const {StudentName : name } = course //for using our own convinient key name
+console.log(name);
+
+const navbar= ()=> {
+
+}
+navbar(company = "vrinda")
